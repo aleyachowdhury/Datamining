@@ -1,0 +1,52 @@
+GETTING STARTED GUIDE: Min-max normalization and Pearson’s Correlation Coefficient
+
+Step 1A: Download R and (optional) RStudio
+
+To download R and RStudio, visit the following websites and follow the instructions given to download the appropriate version for your operating system.
+
+R DOWNLOAD: https://cran.rstudio.com/
+RSTUDIO DOWNLOAD : https://www.rstudio.com/products/rstudio/download/
+
+Step 1B: Download Python and (optional) PyDev (a plugin for Eclipse)
+
+To download Python, visit the following website and follow the instructions given to download the appropriate version for your operating system.
+
+PYTHON DOWNLOAD: https://www.python.org/downloads/
+PYDEV DOWNLOAD: http://www.pydev.org/?src=www.discoversdk.com
+
+Step 2: Download the Data 
+To browse the raw data, click “Access the SQL database” and log in with your username (meng) and password (datamining).
+Two sets of data have been made available to you along with this submission, one which has not been normalized and one which has been normalized. The un-normalized data is suitable for testing the min-max normalization program and the normalized data is suitable for testing the Pearson’s program.
+Save all of the un-normalized files to a single directory of your choice along with the min-max normalization program, and all of the normalized files to a separate directory along with the Pearson.R script.
+
+Step 3: Run min-max normalization
+Download Miniconda from https://conda.io/miniconda.html, Be sure to get Python3. 
+These Miniconda installers contain the conda package manager and Python. Once Miniconda is installed, you can use the conda command to install any other packages and create environments, etc. For example I install ipython numpy pandas matplotlib jupyter
+
+Step 4: Run Pearson’s correlation coefficient
+Make sure that the output files from the min-max normalization have been saved to the directory in which Pearsons.R resides. In the command line, navigate to this directory and open R or, if you are using an IDE, change your current working directory to the directory in which the Pearsons.R resides. Type the following:
+
+source(“Pearsons.R”)
+
+and press enter.
+The program will run, generating all correlation coefficients between the following sets:
+
+{PCT_DIABETES_ADULT10, PCT_OBESE_ADULTS10, PCT_OBESE_CHILD11} and
+
+{PCT_LACCESS_POP10, PCT_LACCESS_LOWI10, PCT_LACCESS_CHILD10, PCT_LACCESS_SENIORS10, PCT_FREE_LUNCH10, PCT_REDUCED_LUNCH10, PC_WIC_REDEMP08, MILK_PRICE10, SODA_PRICE10, MILK_SODA_PRICE10, FFRPTH12, FSRPTH12, GROCPTH12, SUPERCPTH12, CONVSPTH12, SPECSPTH12, PCT_NHWHITE10, PCT_NHBLACK10, PCT_HISP10, PCT_NHASIAN10, PCT_NHNA10, PCT_NHPI10, PCT_65OLDER10, PCT_18YOUNGER10, POVRATE10, CHILDPOVRATE10}
+
+At the bottom of the output stream, a table summarizing the significant relationships (any relationship with a correlation coefficient of magnitude greater than or equal to 0.5) will be printed.
+
+GETTING STARTED GUIDE:KNN code
+
+% This program calculates the missing values from an "Input" file.
+% the program reads from the file that contains three columns of data at a
+% time.
+% In order for this code to work there should not be any Strings in the
+% input file
+% transfer the missing values to a different sheet and insert the
+% number "0" that represent the missing value
+% to run it just write "knn" and find the values once at a time. such as the
+% following : knn 25 0 87 "enter”, Zero represent the missing value.
+
+
